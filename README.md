@@ -1,6 +1,6 @@
 # kanji-niai-similarity-yomitan
 
-Visually similar kanji from the [niai](https://github.com/mrahhal/niai) project for Yomitan and DaLang.
+Visually similar kanji from the [niai](https://github.com/mrahhal/niai) project for Yomitan and DaKanji.
 
 Each kanji gets up to 20 similar kanji with their similarity score as a `similar` stat,
 e.g. `["了","","","",[],{"similar":"了 (1.00)  亅 (0.95)  …"}]`.
