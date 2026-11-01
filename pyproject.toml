@@ -1,7 +1,39 @@
 [project]
-name = "niai-yomitan"
+name = "kanji-niai-similarity-yomitan"
 version = "0.1.0"
-description = "Add your description here"
+description = "Visually similar kanji from the niai project"
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = []
+requires-python = ">=3.12"
+dependencies = [
+    "dalang-dict-utils",
+]
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.400",
+    "pytest>=8.3",
+    "ruff>=0.11",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+dalang-dict-utils = { git = "https://github.com/dariyooo/dalang-dict-utils", tag = "v0.2.8" }
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+# Vendored third-party code stays as it was copied
+extend-exclude = ["vendored_sources"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pyright]
+include = ["build.py", "kanji_niai_similarity", "tests"]
+pythonVersion = "3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

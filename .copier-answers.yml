@@ -1,0 +1,10 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v0.2.8
+_src_path: gh:dariyooo/dalang-dict-utils
+dalang_dict_utils_tag: v0.2.8
+description: Visually similar kanji from the niai project
+github_owner: dariyooo
+module_name: kanji_niai_similarity
+python_version: '3.12'
+repo_name: kanji-niai-similarity-yomitan
+source_updates: false
